@@ -1,0 +1,6 @@
+%syntax-version=1.0.0
+%project=diplomademo
+%uri=https://github.com/bohdandev/diploma-demo.git
+
+init 2018-01-01T16:05:29Z DiplomaDemo <bohdan.salo.dev@gmail.com> # Initialize the dellstore2 database
+product-add-comments 2018-01-01T04:39:54Z DiplomaDemo <bohdan.salo.dev@gmail.com> # add new column "comments" to product
