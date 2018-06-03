@@ -5,5 +5,5 @@ export DB_PRD_USER=diplomademo
 export DB_PRD_PASS=diplomademo
 export NODE_HOST=localhost
 export NODE_PORT=3000
-node /myapp/index.js&
+pm2 start /myapp/index.js -f index
 exit 0
