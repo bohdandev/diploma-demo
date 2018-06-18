@@ -5,7 +5,15 @@ require('../../index');
 require('should');
 const server = request.agent("http://localhost:3000");
 
-describe('Task Home', function () {
+console.log(` 
+=======================================
+
+            Unit testing
+
+=======================================
+`);
+
+describe('Render Home', function () {
     describe('GET /', function () {
         it('should return statusCode 200', function (done) {
             server
@@ -21,7 +29,7 @@ describe('Task Home', function () {
 });
 
 
-describe('Task product', function () {
+describe('Render product', function () {
     describe('GET /', function () {
         it('should return error', function (done){
         	server

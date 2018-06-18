@@ -4,6 +4,7 @@
   "description": "demo",
   "main": "index.js",
   "scripts": {
+    "start": "set NODE_ENV=development&& nodemon index.js",
     "test": "nyc --reporter=html --reporter=text mocha test/unit/product"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "dependencies": {
     "hapi": "^17.5.1",
     "hapi-pino": "^4.0.4",
+    "inert": "^5.1.0",
     "pg": "^4.5.5",
     "pug": "^2.0.3",
     "q": "~1.0.1",
