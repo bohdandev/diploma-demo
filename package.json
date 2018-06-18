@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "set NODE_ENV=development&& nodemon index.js",
-    "test": "nyc --reporter=html --reporter=text mocha test/unit/product"
+    "test": "nyc --reporter=html --reporter=text mocha test/unit/index"
   },
   "keywords": [],
   "license": "ISC",

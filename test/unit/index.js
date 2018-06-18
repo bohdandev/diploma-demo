@@ -28,20 +28,3 @@ describe('Render Home', function () {
     });
 });
 
-
-describe('Render product', function () {
-    describe('GET /', function () {
-        it('should return error', function (done){
-        	server
-        		.get('/products/a00')
-        		.expect("Content-type", /json/)
-        		.expect(200)
-        		.end(function(err,res){
-        			err.should.notnull;
-        			res.status.should.equal(500);
-        			done();
-        		});
-        });
-    });
-});
-
