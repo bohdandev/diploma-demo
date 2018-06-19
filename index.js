@@ -31,30 +31,14 @@ const startServer = async () => {
         server.route(routes[route]);
     }
 
-    if (isDevelopment()) {
-        await server.register({
-            plugin: require('hapi-pino'),
-            options: {
-                prettyPrint: true,
-                logEvents: ['response']
-            }
-        });
-    }
 
     try {
         await server.start();
         console.log(`Server running at: ${server.info.uri}`);
-    } catch (err) {
-    }
+    } catch (err) {}
 
 };
 
 startServer();
-
-function isDevelopment () {
- return process.env.NODE_ENV === 'development';
-}
-
-
 
 module.exports = server;
